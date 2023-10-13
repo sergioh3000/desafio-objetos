@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        class Bebida{
+            constructor(nome, qtd, cor){
+                this.nome = nome,
+                this.qtd = qtd,
+                this.cor = cor
+            }
+            description(){
+                return (this.bebida + " é uma bebida de cor " + this.cor + " com " + this.qtd + "ml" )
+            }
+        }
+
+        let bebida1 = new Bebida(prompt("qual é o nome da bebida 1?"), prompt("qual é a quantidade de bebida? 1"), prompt("qual a cor da bebida? 1"))
+        let bebida2 = new Bebida(prompt("qual é o nome da bebida 2?"), prompt("qual é a quantidade de bebida? 2"), prompt("qual a cor da bebida? 2"))
+
+        function Comparador() {
+            if( bebida1.nome === bebida2.nome){
+                console.log("As bebidas tem nomes iguais")
+            } else {
+                console.log("As bebidas tem nomes diferentes")
+            }
+
+            if( bebida1.qtd === bebida2.qtd){
+                console.log("As bebidas tem quantidades iguais")
+            } else {
+                console.log("As bebidas tem quantidades diferentes")
+            }
+
+            if( bebida1.cor === bebida2.cor){
+                console.log("As bebidas tem cores iguais")
+            } else {
+                console.log("As bebidas tem cores diferentes")
+            }
+        }
+
+        Comparador()
+
+    </script>
+</body>
+</html>
